@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/dzirt/CLionProjects/Caesar_Cipher/caesar_cipher.cpp
+caesar_cipher.h
+C:/Users/dzirt/CLionProjects/Caesar_Cipher/caesar_cipher.h
+
+C:/Users/dzirt/CLionProjects/Caesar_Cipher/caesar_cipher.h
+iomanip
+-
+iostream
+-
+string
+-
+ctime
+-
+
