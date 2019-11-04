@@ -20,7 +20,7 @@ public:
         encrypt(STRING_FOR_WORK);
         deencrypt(STRING_FOR_WORK);
     }
-
+private:
     //Prototypes
     void get_string(char **, int);
     void encrypt(char *);
