@@ -11,7 +11,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70305ab-34a4-4c64-a7a6-633f97f9b78f" name="Default Changelist" comment="" />
+    <list default="true" id="f70305ab-34a4-4c64-a7a6-633f97f9b78f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caesar_cipher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/caesar_cipher.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caesar_cipher.h" beforeDir="false" afterPath="$PROJECT_DIR$/caesar_cipher.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Caesar_Cipher.dir/caesar_cipher.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Caesar_Cipher.dir/caesar_cipher.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Caesar_Cipher.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Caesar_Cipher.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Caesar_Cipher.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Caesar_Cipher.dir/vc140.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Caesar_Cipher.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Caesar_Cipher.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Caesar_Cipher.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Caesar_Cipher.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Caesar_Cipher.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Caesar_Cipher.pdb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +36,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1T7zmeXBEg7Apw5OBIzanqsEpHu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -60,11 +72,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572826081684</updated>
-      <workItem from="1572826082767" duration="13526000" />
+      <workItem from="1572826082767" duration="14371000" />
+      <workItem from="1573000824123" duration="689000" />
+      <workItem from="1573183550717" duration="43000" />
+      <workItem from="1573439613075" duration="541000" />
+      <workItem from="1573782372483" duration="934000" />
+      <workItem from="1574814756467" duration="622000" />
+      <workItem from="1576193895643" duration="7410000" />
+      <workItem from="1576246471945" duration="4109000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

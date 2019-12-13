@@ -4,42 +4,78 @@
 
 #include "caesar_cipher.h"
 
-
-void caesar_cipher::get_string(char **ptr, int length) { //with '**' we can initialize a pointer
+//input method
+void caesar_cipher::get_string(char **ptr, int length) {
     *ptr = new char[length];
     cout << "Enter your string: " << endl;
     cin.getline(*ptr, length);
 }
 
-void caesar_cipher::encrypt(char *PURE_STRING) {
-    srand(time(0));
-    for (int i = 0; i < strlen(PURE_STRING); i++) {
-        to_encrypt((PURE_STRING + i));
+//send each fragment of CString to encrypting method
+void caesar_cipher::encrypt(char *pureString, int *key) {
+    set_key(key, strlen(pureString));
+ for (int i = 0; i < strlen(pureString); i++) {
+        to_encrypt((pureString + i),(key+i));
     }
-    cout << "Encrypted: " << PURE_STRING << endl;
+    cout << "Encrypted: " << pureString << endl;
 }
 
-void caesar_cipher::deencrypt(char *DIRTY_STRING) {
-    srand(time(0));
-    for (int i = 0; i < strlen(DIRTY_STRING); i++) {
-        to_decrypt((DIRTY_STRING + i));
+//send each fragment of CString to decrypting method
+void caesar_cipher::decrypt(char *dirtyString,const int*keyArray) {
+    for (int i = 0; i < strlen(dirtyString); i++) {
+        to_decrypt((dirtyString + i),(keyArray+i));   
     }
-    cout << "Decrypted: " << DIRTY_STRING << endl;
+    cout << "Decrypted: " << dirtyString << endl;
 }
 
-
-char *caesar_cipher::to_encrypt(char *a) {
-    int TO_ASCII_COD;
-    TO_ASCII_COD = int(*a);//convert char to ASCII int equivalent
-    TO_ASCII_COD -= 1;//minus number for encrypting
-    *a = static_cast<char>(TO_ASCII_COD);
+//encrypt the char and return in back
+char *caesar_cipher::to_encrypt(char *a, const int *key) {
+    int toAsciiCod;
+    toAsciiCod = int(*a);//convert char to ASCII int equivalent
+    toAsciiCod -= *key;//minus number for encrypting
+    *a = static_cast<char>(toAsciiCod);
     return a;
 }
 
-char *caesar_cipher::to_decrypt(char *b) {
-    int FROM_ASCII_CODE;
-    FROM_ASCII_CODE = int(*b);
-    FROM_ASCII_CODE += 1;
-    *b = static_cast<char>(FROM_ASCII_CODE);
+char *caesar_cipher::to_decrypt(char *b,const int *key) {
+    int fromAsciiCode;
+    fromAsciiCode = int(*b);
+    fromAsciiCode += *key;
+    *b = static_cast<char>(fromAsciiCode);
     return b;
 }
+
+// fill the key array by random numbers
+void caesar_cipher::set_key(int *keyPtr, int i) {
+    srand(time(0));
+    for (int j = 0; j < i; j++) {
+        int f=(rand() % 26);
+        *(keyPtr+j)= f;
+    }
+}
+
+
+//print out array of keys
+void caesar_cipher::get_key(const int*keys){
+    cout<<"Array of keys contain: ";
+    cout<<sizeof(keys)<<endl;
+    for(int i=0;i<sizeof(keys);i++){
+       if(i==(sizeof(keys)-1)){
+           cout<<*(keys+i)<<" ; ";
+       }else cout<<*(keys+i)<<" , ";
+    }
+}
+
+
+/*void caesar_cipher::set_key(int **keyPtr, int i) {
+ //   *keyPtr = new int[i];
+ //   int *ptr=new int[i];
+//    srand(time(0));
+  //  for (int j = 0; j < i; j++) {
+ //       cout<<j<<"/";
+ //       int f=(rand() % 26);
+ //       *(keyPtr+j)=& f;
+//       cout<<*(keyPtr+j)<<"endl"<<endl;
+//    }
+}*/
+

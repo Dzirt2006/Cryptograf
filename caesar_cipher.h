@@ -16,21 +16,32 @@ class caesar_cipher {
 public:
     //Constructors
     caesar_cipher() {
-        get_string(&STRING_FOR_WORK, STRING_LENGTH);
-        encrypt(STRING_FOR_WORK);
-        deencrypt(STRING_FOR_WORK);
+        get_string(&stringForWork, STRING_LENGTH);
+        encrypt(stringForWork,keyArr);
+        decrypt(stringForWork,keyArr);
+        get_key(keyArr);
     }
+
 private:
     //Prototypes
     void get_string(char **, int);
-    void encrypt(char *);
-    char *to_encrypt(char*);
-    char *to_decrypt(char*);
-    void deencrypt(char*);
+
+    void encrypt(char *,int*);
+
+    char *to_encrypt(char *,const int *);
+
+    char *to_decrypt(char *,const int *);
+
+    void decrypt(char *,const int *);
+
+    void set_key(int*, int);
+
+    void get_key(const int*);
+
     //Variables
-    const int STRING_LENGTH = 35;
-    char *STRING_FOR_WORK = nullptr;
-    char *ENCRYPTED = nullptr;
+    static const int STRING_LENGTH = 35;
+    char *stringForWork = nullptr;
+    int *keyArr=new int[STRING_LENGTH];
 };
 
 
