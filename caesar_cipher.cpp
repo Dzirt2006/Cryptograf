@@ -9,12 +9,17 @@ void caesar_cipher::get_string(char **ptr, int length) {
     *ptr = new char[length];
     cout << "Enter your string: " << endl;
     cin.getline(*ptr, length);
+    if( strlen(*ptr)==0){       //checking zero cString
+        cout<<"Your input is zero.Try again"<<endl;
+        get_string(&*ptr,length);
+    }
 }
 
 //send each fragment of CString to encrypting method
 void caesar_cipher::encrypt(char *pureString, int *key) {
     set_key(key, strlen(pureString));
  for (int i = 0; i < strlen(pureString); i++) {
+
         to_encrypt((pureString + i),(key+i));
     }
     cout << "Encrypted: " << pureString << endl;
@@ -23,7 +28,7 @@ void caesar_cipher::encrypt(char *pureString, int *key) {
 //send each fragment of CString to decrypting method
 void caesar_cipher::decrypt(char *dirtyString,const int*keyArray) {
     for (int i = 0; i < strlen(dirtyString); i++) {
-        to_decrypt((dirtyString + i),(keyArray+i));   
+        to_decrypt((dirtyString + i),(keyArray+i));
     }
     cout << "Decrypted: " << dirtyString << endl;
 }

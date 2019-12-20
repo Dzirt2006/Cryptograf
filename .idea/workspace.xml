@@ -14,10 +14,6 @@
     <list default="true" id="f70305ab-34a4-4c64-a7a6-633f97f9b78f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/caesar_cipher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/caesar_cipher.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caesar_cipher.h" beforeDir="false" afterPath="$PROJECT_DIR$/caesar_cipher.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Caesar_Cipher.dir/caesar_cipher.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Caesar_Cipher.dir/caesar_cipher.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Caesar_Cipher.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Caesar_Cipher.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Caesar_Cipher.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Caesar_Cipher.dir/vc140.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Caesar_Cipher.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Caesar_Cipher.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Caesar_Cipher.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Caesar_Cipher.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Caesar_Cipher.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Caesar_Cipher.pdb" afterDir="false" />
@@ -39,7 +35,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -79,7 +75,9 @@
       <workItem from="1573782372483" duration="934000" />
       <workItem from="1574814756467" duration="622000" />
       <workItem from="1576193895643" duration="7410000" />
-      <workItem from="1576246471945" duration="4109000" />
+      <workItem from="1576246471945" duration="6000000" />
+      <workItem from="1576374104510" duration="18000" />
+      <workItem from="1576807623264" duration="2193000" />
     </task>
     <servers />
   </component>
